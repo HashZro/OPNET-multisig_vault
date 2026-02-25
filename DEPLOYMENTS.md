@@ -18,6 +18,24 @@
 
 ---
 
+## OPNet Testnet — BetaToken (OP-20)
+
+| Field | Value |
+|---|---|
+| **Date** | 2026-02-25 |
+| **Network** | OPNet Testnet |
+| **RPC Endpoint** | https://testnet.opnet.org |
+| **Contract** | BetaToken (BETA) — OP-20 token, 1B supply |
+| **Contract Address** | `opt1sqzjpdemrpyuapuhwky72s270j0ddgjzyfcn7m4xk` |
+| **Contract PubKey** | `0x3aad21bbfc7d49a2699a8477159ffeca1b84fdd155a44c6f822048062235e6e9` |
+| **Funding Tx** | `3994db2f98b57e9f37e378b1392ef2b978c91bddef960adf6d5405007f3dcb2d` |
+| **Deploy Tx** | `4de5ab258208a8cdb5e6d7585e0d1173a0c64d1e35087fc1f5f023eac61a3dc6` |
+| **WASM size** | 33,332 bytes |
+| **Deployer (p2tr)** | `opt1pr55ynlpcvfqm40kv5m4743th37xach304jvzzzcyq632qj9w53tqvzmf5k` |
+| **Deployer (p2wpkh)** | `opt1qm57tmmyj3fw95j56fj2qqge6uwv65w2hut5dgp` |
+
+---
+
 ## Key Technical Notes
 
 - OPNet testnet indexes addresses with the `opt` bech32 HRP, not the standard Bitcoin `tb` prefix.

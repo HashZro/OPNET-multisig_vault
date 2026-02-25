@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "build:alpha": "asc src/alpha/index.ts --target alpha --measure --uncheckedBehavior never",
-    "build": "npm run build:alpha",
-    "deploy:alpha": "node --experimental-strip-types scripts/deploy-alpha.ts"
+    "build:beta": "asc src/beta/index.ts --target beta --measure --uncheckedBehavior never",
+    "build": "npm run build:alpha && npm run build:beta",
+    "deploy:alpha": "node --experimental-strip-types scripts/deploy-alpha.ts",
+    "deploy:beta": "node --experimental-strip-types scripts/deploy-beta.ts"
   },
   "dependencies": {
     "@btc-vision/btc-runtime": "1.11.0-rc.4",

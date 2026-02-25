@@ -4,6 +4,11 @@
       "outFile": "build/AlphaToken.wasm",
       "textFile": "build/AlphaToken.wat",
       "use": ["abort=src/alpha/index/abort"]
+    },
+    "beta": {
+      "outFile": "build/BetaToken.wasm",
+      "textFile": "build/BetaToken.wat",
+      "use": ["abort=src/beta/index/abort"]
     }
   },
   "options": {
