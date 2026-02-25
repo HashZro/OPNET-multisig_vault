@@ -30,7 +30,7 @@ const NETWORK  = networks.testnet;
 
 // OPNet uses a custom bech32 HRP ('opt') instead of the standard BTC testnet HRP ('tb').
 const OPNET_NETWORK = { ...NETWORK, bech32: NETWORK.bech32Opnet! };
-const FEE_RATE    = 500;    // sat/vbyte
+const FEE_RATE    = 50;     // sat/vbyte
 const PRIORITY_FEE = 0n;
 const GAS_SAT_FEE  = 330n;
 

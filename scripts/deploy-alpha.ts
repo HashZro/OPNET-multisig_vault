@@ -32,7 +32,7 @@ const NETWORK  = networks.testnet;
 // The underlying witness program is identical — only the HRP and checksum differ.
 // UTXO indexing and the `from` field must use the OPNet-format addresses.
 const OPNET_NETWORK = { ...NETWORK, bech32: NETWORK.bech32Opnet! };
-const FEE_RATE    = 500;    // sat/vbyte
+const FEE_RATE    = 50;     // sat/vbyte
 const PRIORITY_FEE = 0n;
 const GAS_SAT_FEE  = 330n;
 
