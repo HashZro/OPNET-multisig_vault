@@ -136,8 +136,8 @@ Both test tokens are live on **OPNet Testnet**:
 
 | Token | Address |
 |---|---|
-| **AlphaToken** (ALPHA) | `opt1sqp2m9wyc759rxucgnjq02l78yrh4ylaypyhx4j48` |
-| **BetaToken** (BETA) | `opt1sqzjpdemrpyuapuhwky72s270j0ddgjzyfcn7m4xk` |
+| **AlphaToken** (ALPHA) | `opt1sqrfpr855j4ngqsyyejc00fvheult7s3mjug2pz9n` |
+| **BetaToken** (BETA) | `opt1sqpjcuujxqtgawt6ck8qxdw6pue728rkcnghpp084` |
 
 Full deployment details (tx hashes, deployer addresses, WASM sizes) are in [`DEPLOYMENTS.md`](./DEPLOYMENTS.md).
 

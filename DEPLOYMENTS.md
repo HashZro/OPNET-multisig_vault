@@ -2,7 +2,7 @@
 
 ---
 
-## OPNet Testnet — AlphaToken v2 (OP-20) ← ACTIVE
+## OPNet Testnet — AlphaToken v4 (OP-20) ← ACTIVE
 
 | Field | Value |
 |---|---|
@@ -10,18 +10,18 @@
 | **Network** | OPNet Testnet |
 | **RPC Endpoint** | https://testnet.opnet.org |
 | **Contract** | AlphaToken (ALPHA) — OP-20 token, 1B supply, mine() function |
-| **Contract Address** | `opt1sqq0k32mjtxlhlsvwfn7awevg2h3vamaxrvhtz5th` |
-| **Contract PubKey** | `0xd649045d50cc0fd8941b251918230389dcd1cf48c1b4a2fde0c2d23399e50eff` |
+| **Contract Address** | `opt1sqrfpr855j4ngqsyyejc00fvheult7s3mjug2pz9n` |
+| **Contract PubKey** | `0xc71bac0f94e02b8ed8bb68111ab98586bc44a6e8d4b8d48a714354eb80dda1c8` |
 | **mine() selector** | `0x417c69bb` |
-| **Funding Tx** | `396512fbc7f3ebd845e7f85d541943f82c1a8091562f8762f7830101d8278178` |
-| **Deploy Tx** | `b5488aea555a613cd71f6194f0e18dfc12d3f91ab551280fde4aeb9d182ad83d` |
+| **Funding Tx** | `26cfa4c097e5a87541e05e948a7b797d10cdd01c4f8854542dd6a7a1c51bd1cd` |
+| **Deploy Tx** | `c67b9360864d4ac15e3fa1a5115d9003f5e06e61fbf575c34f6dc8910b7df03b` |
 | **WASM size** | 35,297 bytes |
 | **Deployer (p2tr)** | `opt1pr55ynlpcvfqm40kv5m4743th37xach304jvzzzcyq632qj9w53tqvzmf5k` |
 | **Deployer (p2wpkh)** | `opt1qm57tmmyj3fw95j56fj2qqge6uwv65w2hut5dgp` |
 
 ---
 
-## OPNet Testnet — BetaToken v2 (OP-20) ← ACTIVE
+## OPNet Testnet — BetaToken v4 (OP-20) ← ACTIVE
 
 | Field | Value |
 |---|---|
@@ -29,23 +29,27 @@
 | **Network** | OPNet Testnet |
 | **RPC Endpoint** | https://testnet.opnet.org |
 | **Contract** | BetaToken (BETA) — OP-20 token, 1B supply, mine() function |
-| **Contract Address** | `opt1sqrlu3rjls5eu49jkhed3z32t2ptf4jdxt5c0hnn5` |
-| **Contract PubKey** | `0xf031608d82025a4f3017ae26176d20b4964adaa53ee0f74a3fbc81b425d5772b` |
+| **Contract Address** | `opt1sqpjcuujxqtgawt6ck8qxdw6pue728rkcnghpp084` |
+| **Contract PubKey** | `0xc372eaa42f9f3be060b5ef266378c46ff45990becd0369f4e7751fb38913aa77` |
 | **mine() selector** | `0x417c69bb` |
-| **Funding Tx** | `30a453f53f80fcded4c8c48080f14fa1b7d965457a9d9bbff29a6f2c0f86ea69` |
-| **Deploy Tx** | `adf150cf7d07fb626b99ea39454eb64ae2c8f914fe36fea22acb46081b6a3b82` |
+| **Funding Tx** | `99d83e6f1ad6bfbfe1a3f1f4d1e74863a2ff9425fe65e6c129593779f6ce1ec0` |
+| **Deploy Tx** | `f43dce4a6777b01946c62c5149aab6f774357f7f1c1265862a2c0b9cf19dd3b6` |
 | **WASM size** | 35,289 bytes |
 | **Deployer (p2tr)** | `opt1pr55ynlpcvfqm40kv5m4743th37xach304jvzzzcyq632qj9w53tqvzmf5k` |
 | **Deployer (p2wpkh)** | `opt1qm57tmmyj3fw95j56fj2qqge6uwv65w2hut5dgp` |
 
 ---
 
-## Superseded Deployments (no mine function)
+## Superseded Deployments
 
-| Contract | Address | Deploy Tx |
+| Contract | Address | Notes |
 |---|---|---|
-| AlphaToken v1 | `opt1sqp2m9wyc759rxucgnjq02l78yrh4ylaypyhx4j48` | `0a55de2c8c97591bc58276c3aa83cc1bc5f0f5823dffd6269d64b43dd3e6ac02` |
-| BetaToken v1 | `opt1sqzjpdemrpyuapuhwky72s270j0ddgjzyfcn7m4xk` | `4de5ab258208a8cdb5e6d7585e0d1173a0c64d1e35087fc1f5f023eac61a3dc6` |
+| AlphaToken v1 | `opt1sqp2m9wyc759rxucgnjq02l78yrh4ylaypyhx4j48` | No mine() |
+| BetaToken v1 | `opt1sqzjpdemrpyuapuhwky72s270j0ddgjzyfcn7m4xk` | No mine() |
+| AlphaToken v2 | `opt1sqq0k32mjtxlhlsvwfn7awevg2h3vamaxrvhtz5th` | Deploy tx never confirmed |
+| BetaToken v2 | `opt1sqrlu3rjls5eu49jkhed3z32t2ptf4jdxt5c0hnn5` | Deploy tx never confirmed |
+| AlphaToken v3 | `opt1sqrfjaegty67hjsp454halqkr2nxa0f6tnydz3kxc` | Lost in testnet reset |
+| BetaToken v3 | `opt1sqq697v6kk9hhtvnvxv543hvm35sxyjez7uwrr6h6` | Lost in testnet reset |
 
 ---
 
