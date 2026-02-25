@@ -1,8 +1,63 @@
-# Design Directive — Neobrutalism (Borderlands Edition)
+# Design Directive — OctoSig Neobrutalism
 
 > **This file is the design law for every UI we build.**
 > All visual decisions — components, layouts, colors, typography, animations — must pass through these rules.
-> The target feel: **Borderlands meets the web**. Living comic book. Raw, loud, unapologetic.
+> The target feel: **Borderlands meets the deep sea**. Living comic book. Raw, loud, unapologetic. Ink-stained.
+
+---
+
+## 0. Brand Identity — OctoSig
+
+### Name
+**OctoSig** — "octopus" + "signature." Eight arms, multiple signers, one vault.
+
+### Tagline Options
+- *Eight arms. One vault.*
+- *Sign together. Hold forever.*
+- *Multisig, but with tentacles.*
+
+### Mascot — The Octo
+A stylized **neobrutalist octopus**: thick ink outlines, flat-color fills, slightly menacing grin. Not cute — **cool**. Think Borderlands creature design meets Japanese woodblock print.
+
+**Key traits:**
+- **Thick 3–4px black outlines** around every limb and the mantle (head)
+- **Flat saturated fills** — no gradients on the body, ever
+- **8 tentacles as a visual motif**: each arm can hold a key, a signature, a lock, a Bitcoin, etc.
+- **Ink splatter** as a recurring decorative element — the octopus "signs" with ink
+- Eyes: **sharp, angular, confident** — not round cartoon eyes. Think half-lidded, knowing.
+- Optional: **suction cups rendered as small circles/dots** along tentacles — doubles as a pattern element
+
+**Mascot variations:**
+| Context | Pose / Style |
+|---|---|
+| Logo mark (compact) | Top-down silhouette, 8 arms radiating symmetrically, keyhole in the center |
+| Hero / landing page | Side view, arms spread, holding keys + signing a document with ink |
+| Loading / processing | Tentacles animating in sequence (wave motion), ink dripping |
+| Error state | Octopus tangled in its own arms, confused expression |
+| Success state | Octopus giving a tentacle thumbs-up, ink stamp on a document |
+| Favicon / app icon | Simplified mantle (head) + 2 visible arms, one holding a key |
+
+### Wordmark
+**OCTOSIG** — always uppercase in display contexts. Set in the heading font (`Space Grotesk` or `Syne`), weight **800 (extrabold)**, letter-spacing `0.04em`.
+
+**Logo lockup:** Octopus icon mark + **OCTOSIG** wordmark, separated by a thick vertical bar (`3px solid #000`).
+
+The "O" in OCTOSIG may optionally be replaced with the octopus silhouette icon in large display sizes.
+
+### Brand Personality
+| Trait | Expression |
+|---|---|
+| **Confident** | Bold colors, thick borders, no apologies |
+| **Technical** | Monospace accents, key/signature iconography, crypto-native language |
+| **Playful-dangerous** | The octopus grins. It's protecting your vault, but it's not cute about it. |
+| **Collective** | 8 arms = team. Multisig = trust distributed. "We" energy, not "I" energy. |
+
+### Visual Motifs (recurring elements)
+- **Ink splatters** — background decoration, section dividers, button hover effects
+- **Tentacle curves** — used as decorative borders, underlines, or section separators
+- **Suction cup dots** — repeating dot patterns for backgrounds or textures
+- **Keys + locks** — crypto/security iconography, always drawn in thick outline style
+- **The number 8** — subtle references (8-column grid, 8px base spacing, octagonal shapes)
 
 ---
 
@@ -73,18 +128,27 @@ Flat, saturated, zero gradients. Think screen-printed poster, not digital painti
 - **Pure black `#000000`** for borders, shadows, and text
 - Accent colors must be **fully saturated** — no pastels, no muted tones
 
-**Starter palette (Borderlands-inspired):**
+**OctoSig palette (deep sea neobrutalism):**
 ```
-Background (page)    : #FFFBF0  (warm off-white / parchment)
+Background (page)    : #F0F4FF  (cold off-white / ocean mist)
 Background (card)    : #FFFFFF  or a vibrant hero color
-Primary accent       : #F5C800  (Borderlands yellow/gold)
-Secondary accent     : #FF6B35  (Borderlands orange)
-Tertiary accent      : #4ECDC4  (electric teal)
-Danger / alert       : #FF2D20  (punchy red)
-Success              : #44CF6C  (vivid green)
-Text primary         : #0A0A0A  (near-black)
-Border / shadow      : #000000  (pure black)
+Primary accent       : #2D3AFF  (deep ocean blue — the signature OctoSig blue)
+Secondary accent     : #FF6B35  (coral orange — the octopus's highlight color)
+Tertiary accent      : #4ECDC4  (bioluminescent teal — electric deep-sea glow)
+Ink / emphasis       : #7B2FBE  (octopus ink purple — for ink splatter motifs & highlights)
+Danger / alert       : #FF2D20  (punchy red — warning tentacle)
+Success              : #44CF6C  (vivid green — safe waters)
+Bitcoin / gold       : #F5A623  (Bitcoin orange-gold — for crypto-specific UI)
+Text primary         : #0A0A0A  (near-black / abyss)
+Border / shadow      : #000000  (pure black — ink)
 ```
+
+**OctoSig color semantics:**
+- **Deep Ocean Blue (`#2D3AFF`)** — primary brand, buttons, links, active states. This is OctoSig.
+- **Coral Orange (`#FF6B35`)** — secondary actions, notifications, the octopus's warm tones
+- **Bioluminescent Teal (`#4ECDC4`)** — info states, secondary highlights, "glow" elements
+- **Ink Purple (`#7B2FBE`)** — used sparingly for ink splatter decorations, signature confirmations, and the "signed" state
+- **Bitcoin Gold (`#F5A623`)** — reserved for BTC amounts, vault balances, and crypto-specific UI
 
 **Rules:**
 - No gradients — colors are flat fills only
@@ -187,18 +251,20 @@ Active link : underline with 3px solid accent color, or bg highlight block
 
 ---
 
-## 5. The Borderlands Checklist
+## 5. The OctoSig Checklist
 
 Before shipping any UI component, ask:
 
 - [ ] Does every interactive element have a **visible thick border**?
-- [ ] Is the shadow **hard (0 blur)** and **pure black**?
+- [ ] Is the shadow **hard (0 blur)** and **pure black (ink)**?
 - [ ] Does the hover state **physically "press" the element** into the shadow?
 - [ ] Are colors **flat and saturated** (no gradients, no translucency)?
 - [ ] Does the typography feel **bold and structural**?
 - [ ] Would this look at home on a **Borderlands loading screen**?
 - [ ] Is there enough **whitespace** to let elements breathe?
 - [ ] Are interactive elements **unmistakably clickable** (they look like real buttons)?
+- [ ] Does it feel like **OctoSig**? (Deep-sea energy, ink-stained, confident, collective)
+- [ ] Is the **octopus motif** present where appropriate? (Ink splatters, tentacle curves, 8-grid)
 
 ---
 
@@ -220,11 +286,22 @@ Before shipping any UI component, ask:
 
 ## 7. References & Inspiration
 
+**Neobrutalism:**
 - [neobrutalism.dev](https://www.neobrutalism.dev/) — component kit & live examples
 - [NN/g — Neobrutalism Definition](https://www.nngroup.com/articles/neobrutalism/) — UX research perspective
 - [Bejamas — Neubrutalism Web Trend](https://bejamas.com/blog/neubrutalism-web-design-trend) — practical implementation guide
 - [themeselection.com — Neo Brutalism Guide](https://themeselection.com/neo-brutalism/) — beginner's breakdown
-- [Borderlands Art Style breakdown](https://retrostylegames.com/blog/game-art-design-like-borderlands-style/) — the graphic novel shading inspiration
 - [Awesome Neobrutalism (GitHub)](https://github.com/ComradeAERGO/Awesome-Neobrutalism) — curated resource list
 - Los Lunas website (shared by user) — cartoon neobrutalism in the wild
 - Gumroad, Figma — real-world brands using neobrutalist UI
+
+**Art direction (Borderlands + deep sea):**
+- [Borderlands Art Style breakdown](https://retrostylegames.com/blog/game-art-design-like-borderlands-style/) — the graphic novel shading inspiration
+- Japanese woodblock octopus prints (Hokusai) — the OG ink octopus, thick outlines, flat color
+- Subnautica concept art — deep-sea bioluminescence, dark + electric color contrast
+- Splatoon (Nintendo) — ink-as-identity branding, playful but aggressive
+
+**OctoSig-specific:**
+- Octopus anatomy references — for accurate tentacle curves in decorative motifs
+- Cephalopod color-changing behavior — inspiration for state transitions (idle → hover → active)
+- Kraken mythology — visual weight, "guardian of the vault" energy
