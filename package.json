@@ -1,0 +1,22 @@
+{
+  "name": "multsig-vault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:alpha": "asc src/alpha/index.ts --target alpha --measure --uncheckedBehavior never",
+    "build": "npm run build:alpha",
+    "deploy:alpha": "node --experimental-strip-types scripts/deploy-alpha.ts"
+  },
+  "dependencies": {
+    "@btc-vision/btc-runtime": "1.11.0-rc.4",
+    "@btc-vision/transaction": "1.8.0-beta.10",
+    "@btc-vision/bitcoin": "7.0.0-alpha.11",
+    "opnet": "1.8.1-beta.13"
+  },
+  "devDependencies": {
+    "@btc-vision/opnet-transform": "1.2.0",
+    "assemblyscript": "0.27.36",
+    "dotenv": "^16.0.0"
+  }
+}
